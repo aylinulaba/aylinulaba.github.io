@@ -1,0 +1,366 @@
+.portfolio__title {
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-medium);
+    color: var(--border-color);
+}
+
+.tabset ul {
+    display: inline-flex;
+    padding-left: 0;
+    border-bottom: 1px dotted var(--border-color);
+    width: 100%;
+}
+
+.tabset ul li.tab__item {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px dotted var(--border-color);
+    border-bottom: 0;
+    font-weight: var(--font-medium);
+}
+
+.tabset ul li.active,
+.tabset ul li.tab__item:hover {
+    background-color: var(--container-color);
+    transition: .5s;
+}
+
+.tabset ul li.tab__item a {
+    color: var(--text-color-light);
+}
+
+.tabset ul li.active a,
+.tabset ul li.tab__item a:hover {
+    color: var(--text-color-dark);
+    transition: .5s;
+}
+
+.tabset ul li.tab__item a::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: var(--text-color-light);
+}
+
+.tabset ul li.active a::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: var(--red);
+}
+
+.work__grid {
+    margin-top: var(--mb-1);
+}
+
+.work__box {
+    position: relative;
+    border: 1px dotted var(--border-color);
+    background-color: var(--container-color);
+    padding: 2rem 2rem 3rem 2rem;
+}
+
+.work__img {
+    width: 100%;
+}
+
+.work__img:hover {
+    transform: rotate(3deg);
+    transition: .3s ease;
+    opacity: 0.5;
+}
+
+.tool__group {
+    margin-top: var(--mb-0-75);
+    display: block;
+    clear: both;
+}
+
+.detail__button {
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    float: left;
+    padding: 2px 9px 2px 9px;
+}
+
+.detail__button:hover {
+    color: var(--title-color);
+    transition: .5s;
+    background-color: var(--yellow);
+}
+
+.tag {
+    font-size: var(--small-font-size);
+    float: right;
+    color: var(--red);
+}
+
+.tag-icon {
+    font-size: 1rem;
+}
+
+.work__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 1;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.work__modal-content {
+    width: 800px;
+    height: 100%;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    overflow: auto;
+}
+
+.work__modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: crosshair;
+}
+
+.work__modal-title,
+.work__modal-description {
+    text-align: left;
+}
+
+.work__modal-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.work__modal-description {
+    font-size: var(--small-font-size);
+    padding-left: 2px;
+    margin-bottom: var(--mb-2);
+}
+
+.work__modal-list {
+    padding-left: 0;
+    display: inline-flex;
+
+}
+
+.work__modal-list-icon,
+.work__modal-list li {
+    font-size: var(--small-font-size);
+}
+
+.work__modal-list-icon {
+    color: var(--red);
+}
+
+.work__modal-list li {
+    color: var(--text-color-light);
+}
+
+.work__modal-list li:nth-child(1) {
+    padding-right: 2.1rem;
+}
+
+.work__modal-list li:nth-child(2) {
+    padding-left: 2rem;
+    padding-right: 2.1rem;
+}
+
+.work__modal-list li:nth-child(3) {
+    padding-left: 2rem;
+}
+
+.work__modal-list-link {
+    color: var(--red);
+}
+
+.work__modal-list-link:hover {
+    color: var(--text-color-dark);
+    transition: .5s;
+}
+
+.work__modal-text {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-bottom: var(--mb-1-5);
+}
+
+.work__gallery {
+    padding-bottom: 3rem;
+}
+
+.work__gallery div {
+    margin-top: var(--mb-0-5);
+}
+
+.work__gallery-img {
+    width: 100%;
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* BREAKPOINTS */
+/* for large devices */
+@media screen and (max-width: 1400px) {
+    .tag {
+        padding-left: 9px;
+        padding-bottom: 0;
+        padding-top: 3px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio__title {
+        font-size: var(--big-font-size);
+    }
+
+    .detail__button {
+        font-size: var(--normal-font-size);
+    }
+
+    .tool__group {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .tag {
+        font-size: var(--normal-font-size);
+    }
+}
+
+/* for medium devices */
+@media screen and (max-width: 768px) {
+    .tool__group {
+        display: block;
+        clear: both;
+    }
+
+    .tag {
+        font-size: var(--normal-font-size);
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portfolio__title {
+        display: none;
+    }
+
+    .tag {
+        padding-top: 2px;
+    }
+
+    .tabset {
+        margin-top: 3.5rem;
+    }
+}
+
+/* for small devices */
+@media screen and (max-width: 480px){
+    .tabset ul {
+        display: grid;
+    }
+
+    .work__modal-list {
+        display: grid;
+    }
+
+    .work__modal-list li:nth-child(1) {
+        padding-right: 0;
+    }
+    
+    .work__modal-list li:nth-child(2) {
+        padding-left: 0;
+    }
+    
+    .work__modal-list li:nth-child(3) {
+        padding-left: 0;
+    }
+
+    .work__modal-list li {
+        line-height: 1.5rem;
+    }
+
+    .tool__group {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio__title {
+        display: none;
+    }
+
+    .detail__button {
+        font-size: var(small-font-size);
+    }
+
+    .tag {
+        float: right;
+        font-size: var(--small-font-size);
+        padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .work__box {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .work__modal-content {
+        width: 97%;
+    }
+
+    .tag {
+        font-size: var(--small-font-size);
+        padding-left: 9px;
+        padding-bottom: 0;
+        padding-top: 3px;
+    }
+}
+
+@media screen and (max-width: 276px) {
+    .tag {
+        font-size: var(--smaller-font-size);
+    }
+
+    .work__modal-list li,
+    .work__modal-list-icon {
+        font-size: var(--smaller-font-size);
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .work__box {
+        padding: 2rem 1rem 1.5rem 1rem;
+    }
+
+    li.tab__item {
+        font-size: var(--small-font-size);
+    }
+}
