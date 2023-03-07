@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6b7d0dd2.css",
-    "main.js": "/static/js/main.9c0eac79.js",
+    "main.js": "/static/js/main.d83cc204.js",
     "static/media/Aylin-CV.pdf": "/static/media/Aylin-CV.8acf6e2216b356b2698f.pdf",
     "static/media/04.jpg": "/static/media/04.b1d46ef151458bcf46c9.jpg",
     "static/media/about.jpg": "/static/media/about.412009ef265fcfb0420f.jpg",
@@ -41,10 +41,10 @@
     "static/media/work9.jpg": "/static/media/work9.5815a77b94b4395b8203.jpg",
     "index.html": "/index.html",
     "main.6b7d0dd2.css.map": "/static/css/main.6b7d0dd2.css.map",
-    "main.9c0eac79.js.map": "/static/js/main.9c0eac79.js.map"
+    "main.d83cc204.js.map": "/static/js/main.d83cc204.js.map"
   },
   "entrypoints": [
     "static/css/main.6b7d0dd2.css",
-    "static/js/main.9c0eac79.js"
+    "static/js/main.d83cc204.js"
   ]
 }
